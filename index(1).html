@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style2.css"
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="img/DAM.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pagina2.html">Sobre</a></li>
+                <li><a href="pagina3.html">Menu</a></li>
+                <li><a href="feedback.html">Contato</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Precisa de ajuda para arrumar emprego?<br>Procure a <span>DAM</span></h2>
+                <p>Dam é uma iniciativa com intuito principal de ajudar pessoas a embarcarem no mercado de trabalho.
+                </p>
+                <a href="pagina2.html">Comece já</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/logo-ivg.png" class="starbucks">
+            </div>
+        </div>   
+        <ul class="thumb">
+            <li><img src="img/logo-ivg.png" onclick="imgSlider('img/logo-ivg.png');changeCircleColor('#0095da')"></li>
+            <li><img src="img/caixa.png" onclick="imgSlider('img/caixa.png');changeCircleColor('#0a4ea2')"></li>
+            <li><img src="img/neoway-logo.jpeg" onclick="imgSlider('img/neoway.png');changeCircleColor('#1919e6')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/profile.php?id=100089013450830"><img src="img/facebook.png"></a></li>
+            <li><a href="https://twitter.com/DAM_trabalho"><img src="img/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/DAMtrabalho/"><img src="img/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+</body>
+</html>
+

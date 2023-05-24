@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="canais.css"
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="img/DAMa.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pagina2.html">Sobre</a></li>
+                <li><a href="pagina3.html">Outras funções</a></li>
+                <li><a href="feedback.html">Contato</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Indicações de <br><span>canais e websites</span></h2>
+                <p>Mostramos algumas indicações de sites, canais, websites e databooks para ajudar você a achar diversas dicas gerais sobre trabalho.</p>
+                <a href="https://docs.google.com/document/d/1QMikigCSp8DmvcadIWKzWAiuiJ0pfT51d1VpHo2et1I/edit?usp=sharing">Veja aqui</a>
+            </div>
+            <div class="imgBox">
+                <img src="oi/youtube.png" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="oi/youtube.png" onclick="imgSlider('oi/youtube.png');changeBgColor('rgb(75, 74, 74);')"></li>
+            <li><img src="oi/google.png" onclick="imgSlider('oi/google.png');changeBgColor('rgb(136, 65, 65)')"></li>
+            <li><img src="oi/drive.png" onclick="imgSlider('oi/drive.png');changeBgColor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/profile.php?id=100089013450830"><img src="img/facebook.png"></a></li>
+            <li><a href="https://twitter.com/DAM_trabalho"><img src="img/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/DAMtrabalho/"><img src="img/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    
+    </script>
+
+</body>
+</html>
